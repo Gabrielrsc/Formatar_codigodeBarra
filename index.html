@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Conversor de Código de Barras para Cartas</h1>
+    <div class="container">
+      
+      <div class="area1">
+        <textarea
+          id="inputTextarea"
+          rows="30"
+          cols="10"
+          oninput="adicionarQuebraDeLinha()"
+        ></textarea>
+        <br />
+        <button onclick="converterTexto()">Converter</button>
+      </div>
+
+      <div class="area2">
+        <textarea id="outputTextarea" rows="30"  cols="150"></textarea>
+        <br />
+        <button onclick="copiarTexto()">Copiar Texto</button>
+        <span id="copyAlert"></span> <!-- Posicionado ao lado do botão -->
+      </div>
+    </div>
+
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>

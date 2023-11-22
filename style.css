@@ -1,0 +1,49 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    margin: 20px;
+  }
+  .container{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  textarea:focus {
+    border-color: #4caf50;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50; /* Cor de fundo verde */
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049; /* Cor de fundo verde mais escura ao passar o mouse */
+  }
+  #copyAlert {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
